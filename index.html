@@ -8,35 +8,103 @@
   <!-- Importando fonte chique -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fdf7f0; /* bege suave */
-      color: #333;
-    }
-    header {
-      background: #d4af37; /* dourado */
-      color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #000;
-      font-family: 'Cinzel', serif; /* fonte chique */
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-    header p {
-      color: #333;
-      font-weight: bold;
-      font-family: 'Playfair Display', serif;
-    }
-    /* resto do CSS igual ao que ajustamos */
-  </style>
+ <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdf7f0; /* bege suave */
+    color: #333;
+  }
+  header {
+    background: #d4af37; /* dourado */
+    color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #000; /* título preto */
+  }
+  header p {
+    color: #333;
+    font-weight: bold;
+  }
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .produto {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e6d8b5; /* contorno dourado suave */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .produto:hover {
+    transform: scale(1.03);
+    border-color: #d4af37;
+  }
+  .produto img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .produto h3 {
+    margin: 10px 0 5px;
+    color: #000;
+  }
+  .preco {
+    color: #d4af37; /* preço dourado */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .btn-whats {
+    display: inline-block;
+    background: #d4af37; /* dourado */
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .btn-whats:hover {
+    background: #b99729; /* dourado mais escuro */
+    color: white;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #d4af37;
+    color: #000;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .whats-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366; /* Mantém verde do WhatsApp */
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+  .whats-fixo:hover {
+    background: #1da851;
+  }
+</style>
 </head>
 <body>
   <header>
